@@ -1,0 +1,43 @@
+{
+  "info": {
+    "_postman_id": "9ee8a627-edd1-4324-aca6-1b18c1b27c50",
+    "name": "New Collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "38356532"
+  },
+  "item": [
+    {
+      "name": "localhost:8000/process-payment",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "idempotency-key",
+            "value": "001",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"amount\": 100,\r\n  \"currency\": \"GHS\"\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8000/process-payment",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "process-payment"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
